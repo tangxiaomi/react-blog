@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-import { Row, Col, List, Affix } from 'antd'
+import { Row, Col, List } from 'antd'
 import Header from '../components/header';
 import Author from '../components/author';
 import Advert from '../components/advert';
@@ -26,9 +26,7 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* 头部 */}
-      <Affix offsetTop='0'>
-        <Header/>
-      </Affix>
+      <Header/>
       {/* 左侧 右侧列表 */}
       <Row className="comm-main" type="flex" justify="center">
           <Col className="comm-left" xs={24} sm={24} md={16} lg={18} xl={14}>
